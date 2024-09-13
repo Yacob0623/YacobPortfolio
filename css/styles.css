@@ -1,0 +1,108 @@
+/*
+Author: Yacob Hiben
+Date: 09/09/2024
+File: styles.css
+*/
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+/* Universal style for outlining elements during debugging */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header styles */
+header {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.header-content {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center items horizontally, if needed */
+}
+
+.logo {
+    width: 100px; /* Resize the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and heading */
+}
+
+h1 {
+    font-size: 2em; /* Adjust size to match the heading text */
+    margin: 0; /* Remove default margin */
+    color: #333;
+}
+
+/* Navigation bar styles */
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the navigation items */
+}
+
+nav ul li {
+    display: inline-block; /* Inline-block to make list items horizontal */
+    margin-right: 1rem; /* Adds spacing between links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: #444;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #666; /* Change background on hover */
+}
+
+/* Main content area with two columns */
+main {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Separate the columns */
+    padding: 1rem;
+    gap: 20px; /* Adds space between the columns */
+}
+
+/* First column */
+.column1 {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+}
+
+/* Second column */
+.column2 {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
